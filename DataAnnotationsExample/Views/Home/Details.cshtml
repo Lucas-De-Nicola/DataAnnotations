@@ -1,0 +1,56 @@
+﻿@model DataAnnotationsExample.Models.Person
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <link type="text/css" rel="stylesheet" href="~/css/style-sheet.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Information</h1>
+        <div>
+            <p class="display-prop-name">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </p>
+            <br />
+            <p class="display-prop-value">
+                @Html.DisplayFor(model => model.Nombre)
+            </p>
+        </div>
+        <div>
+            <p class="display-prop-name">
+                @Html.DisplayNameFor(model => model.Apellido)
+            </p>
+            <br />
+            <p class="display-prop-value">
+                @Html.DisplayFor(model => model.Apellido)
+            </p>
+        </div>
+        <div>
+            <p class="display-prop-name">
+                @Html.DisplayNameFor(model => model.Edad)
+            </p>
+            <br />
+            <p class="display-prop-value">
+                @Html.DisplayFor(model => model.Edad)
+            </p>
+        </div>
+        <div>
+            <p class="display-prop-name">
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </p>
+            <br />
+            <p class="display-prop-value">
+                @Html.DisplayFor(model => model.Descripcion)
+            </p>
+        </div>
+    </div>
+</body>
+</html>
